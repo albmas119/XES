@@ -4,43 +4,85 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Xceptional Events</title>
-<meta name="Albert Mascall" content="Events Website in Trinidad and Tobago">
+<meta name="Albert Mascall" content="Events,Corporate,Weddings,Birthdays">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
-
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 <style>
 .w3-tangerine {
-  font-family: "Tangerine", serif;
+  font-family: "Tangerine",  serif;
 }
-.w3-lobster {
-  font-family: "Lobster", Sans-serif;
+.w3-Roboto {
+    font-family: 'Roboto';font-size: 22px;
+}
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
 }
 </style>
+</head>
+<body>
+  <script> 
+  // Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<!-- Navbar -->
+  <div class="w3-top">
+  <div class="w3-bar w3-pale-green w3-card">
+    <a class="w3-bar-item w3-button w3-left w3-padding-xlarge w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="index.html" class="w3-bar-item w3-button w3-wide w3-Sofia w3-xlarge"><img src="images/logo.jpg" width="70"><b>Xceptional Events</b> 
+   </a>
+   <a href="services.html" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Services</a>
+<a href="portfolio.html" class="w3-right w3-bar-item w3-button w3-padding-large w3-hide-small">Portfolio</a>
+<a href="about.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">About</a>
+<a href="contact.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">Contact</a>
 
-<!-- Navbar (Sits on top) -->
-<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
-<a href="index.html" class="w3-bar-item w3-button w3-tangerine w3-xlarge"><img src="images/logo.jpg" width="65"><b>Xceptional Events</b></a>
-<!-- Float links to the right. Hide them on small screens -->
-<div class="w3-right w3-hide-small w3-pale-green">
-<a href="services.html" class="w3-bar-item w3-button">Services</a>
-<a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
-<a href="about.html" class="w3-bar-item w3-button">About</a>
-<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+       </div>
+    </a>
+  </div>
+</div>
+
+
+
+<div id="navDemo" class="w3-bar-block w3-black-opacity w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="services.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SERVICES</a>
+  <a href="portfolio.html"class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PORTFOLIO</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
 </div>
 </div>
+</div>
+
 
 <br>
 <br>
 
-<!-- Contact Section -->
+
 <div id="contact" class="w3-container w3-padding-top-32">
 
-<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Contact Us</b></h2>
-<a aria-label="Chat on WhatsApp" href="https://wa.me/18684844957"><img src="images/WhatsApp.jpg" alt="Chat on WhatsApp" style="width:10%"class="w3-right">
+<h2 class="w3-border-bottom w3-center w3-border-light-grey w3-padding-16"><b>Contact Us</b></h2>
+<a aria-label="Chat on WhatsApp" href="https://wa.me/18684844957"><img src="images/WhatsApp.jpg" alt="Chat on WhatsApp" style="width:20%"class="w3-right">
 </a>
 
-<p>Lets get in touch and talk about your next project</p>
+<p>Lets get in touch and talk about your magical event.</p>
 
 <form action="/action_page.php" target="blank">
 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -52,18 +94,14 @@
 </button>
 </form>
 
-<img src="images/logo2.png" class="w3-image" style="width:10%" class="w3-center">
+<img src="images/logo2.jpg"style="width:25%">
 
 </div>
 
-
-<!-- End page content -->
 </div>
-
-
 
 </body>
-<footer class="w3-center w3-pale-green w3-panel w3-padding-10">&copy;2024.
+<footer class="w3-center w3-pale-green w3-panel">&copy;2024.
 </footer>
 </head>
 </html>
