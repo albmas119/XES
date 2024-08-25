@@ -4,36 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Xceptional Events</title>
-<meta name="Albert Mascall" content="weddings, plannner, Events">
+<meta name="Albert Mascall" content="Events,Corporate,Weddings,Birthdays">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
-
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
 <style>
 .w3-tangerine {
-  font-family: "Tangerine", serif;
+  font-family: "Tangerine",  serif;
 }
-
+.w3-Roboto {
+    font-family: 'Roboto';font-size: 22px;
+}
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 20px;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 15px;
+}
+div.scroll-container img {
+  padding: 10px;
+}
 </style>
+</head>
+<body>
+  <script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<!-- Navbar -->
+  <div class="w3-top">
+  <div class="w3-bar w3-pale-green w3-card">
+    <a class="w3-bar-item w3-button w3-left w3-padding-xlarge w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="index.html" class="w3-bar-item w3-button w3-wide w3-Sofia w3-xlarge"><img src="images/logo.jpg" width="70"><b>Xceptional Events</b> 
+   </a>
+   <a href="services.html" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Services</a>
+<a href="portfolio.html" class="w3-right w3-bar-item w3-button w3-padding-large w3-hide-small">Portfolio</a>
+<a href="about.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">About</a>
+<a href="contact.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">Contact</a>
+
+       </div>
+    </a>
+  </div>
+</div>
 
 
-<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
-<a href="index.html" class="w3-bar-item w3-button w3-tangerine w3-xlarge"><img src="images/logo.jpg" width="65"><b>Xceptional Events</b></a>
-<!-- Float links to the right. Hide them on small screens -->
-<div class="w3-right w3-hide-small w3-pale-green">
-<a href="services.html" class="w3-bar-item w3-button">Services</a>
-<a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
-<a href="about.html" class="w3-bar-item w3-button">About</a>
-<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+
+<div id="navDemo" class="w3-bar-block w3-pale-green w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="services.html" class="w3-bar-item w3-button w3-padding-small" onclick="myFunction()">SERVICES</a>
+  <a href="portfolio.html"class="w3-bar-item w3-button w3-padding-small" onclick="myFunction()">PORTFOLIO</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-small" onclick="myFunction()">CONTACT US</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-small" onclick="myFunction()">ABOUT</a>
 </div>
 </div>
+</div>
 
+</a>
 <br>
-<div class="w3-container w3-padding-32" id="Services">
-<!-- Services -->
-<img src="images/logo2.png" class="w3-image w3-center " style="width:10%">
-<div id="Services" class="w3-container ">
-<h2 class="w3-border-bottom w3-border-light-grey"><b>Services</b></h2>
+<img src="images/logo2.jpg" class="w3-image w3-center " style="width:25%">
+<div class="w3-container w3-padding-32">
+<div id="services" class="w3-container w3-center w3-padding-10">
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Services</b></h2>
 </div>
 <h1>What We Do
 </h1>
@@ -55,15 +108,31 @@
 </div>
 
 <div class="w3-col l3 m6 w3-margin-bottom">
-<div class="w3-display-container w3-bottomright">
- 
-  <img src="images/venue4.jpg" alt="House" style="width:80%">
+  <div class="w3-display-container w3-bottomright">
+    <div class="w3-display-topcenter w3-black w3-padding">
+    List of Rentals</div>
+    <ul>
+      <li>Garland's</li>
+    <li>Plate/Glasses/Cutlery</li>
+    <li>360 Camera</li>
+    <li>Dj Systems</li>
+    <li>Chairs</li>
+  </ul>
+
+</div>
+</div>
+<div class="scroll-container w3-right">
+  <img src="images/venue1.jpg" style="width:46%">
+  <img src="images/led.jpg" style="width:60%">
+  <img src="images/media1.jpg" style="width:44%">
+  <img src="images/venue3.jpg"style="width:60%">
+  <img src="images/baby2.jpeg" style="width:60%">
+  <img src="images/venue4.jpg"style="width:60%">
+</div>
 </div>
 </div>
 
 </div>
-
-<!-- End page content -->
 </div>
 
 
