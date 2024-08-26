@@ -24,22 +24,41 @@ body {
 </style>
 </head>
 <body>
+  <script> 
+  // Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 <!-- Navbar -->
   <div class="w3-top">
   <div class="w3-bar w3-pale-green w3-card">
     <a class="w3-bar-item w3-button w3-left w3-padding-xlarge w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-Sofia w3-xlarge"><img src="images/logo.jpg" width="70"><b>Xceptional Events</b> 
    </a>
-   <a href="services.html" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Services</a>
-<a href="portfolio.html" class="w3-right w3-bar-item w3-button w3-padding-large w3-hide-small">Portfolio</a>
-<a href="about.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">About</a>
-<a href="contact.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">Contact</a>
-
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">Contact</a>
+<a href="about.html" class="w3-right w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+<a href="portfolio.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">Portfolio</a>
+<a href="services.html" class="w3-right w3-bar-item w3-hide-small w3-button w3-padding-large">Services</a>
        </div>
-    </a>
   </div>
 </div>
-<br>
+
+
 
 <div id="navDemo" class="w3-bar-block w3-pale-green w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="services.html" class="w3-bar-item w3-button w3-padding-small" onclick="myFunction()">SERVICES</a>
@@ -50,40 +69,34 @@ body {
 </div>
 </div>
 
+
+<br>
+<br>
+
+
+<div id="contact" class="w3-container w3-padding-top-32">
+
+<h2 class="w3-border-bottom w3-center w3-border-light-grey w3-padding-16"><b>Contact Us</b></h2>
+<a aria-label="Chat on WhatsApp" href="https://wa.me/18684844957"><img src="images/WhatsApp.jpg" alt="Chat on WhatsApp" style="width:20%"class="w3-right">
 </a>
 
-<div id="home" class="w3-content" style="max-width:1564px">
+<p>Lets get in touch and talk about your magical event.</p>
 
-<!-- Image -->
-<div class="w3-display-container w3-content " style="max-width:1500px;">
-  <img src="images/logo3.png" style="width:30%"class="w3-top w3-top-center w3-hide-small w3-padding-10">
-<img class="w3-image" src="images\backyard10.jpg" alt="Architecture" width="100%">
-<div class="w3-display-middle w3-margin-top w3-center">
-<h1 class="w3-xxlarge w3-text-white w3-wide"><p class="w3-xlarge font-effect-outline">
-  <span class="w3-padding w3-light-grey w3-opacity-min w3-Roboto">
-  <span class="w3-text-black w3-xxlarge w3-Roboto">MANIFESTING YOUR DREAMS,<br> INTO YOUR REALITY.</p></span>
-</h1>
-<a aria-label="Chat on WhatsApp" href="https://wa.me/18684844957"><img src="images/WhatsApp.jpg" alt="Chat on WhatsApp" style="width:30%"class="w3-top-center">
-</a>
-</div>
-</div>
+<form action="/action_page.php" target="blank">
+<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+<input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+<input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+<input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+<button class="w3-button w3-black w3-section" type="submit">
+<a href="contact.html" target="_blank"></p></a><i class="fa fa-paper-plane"></i> SEND MESSAGE
+</button>
+</form>
 
-
+<img src="images/logo2.png"style="width:25%">
 
 </div>
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
 
-</script>
-
+</div>
 
 </body>
 <footer class="w3-center w3-medium w3-pale-green w3-panel w3-padding-10">&copy;2024 XCEPTIONAL EVENTS PLANNING.
